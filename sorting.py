@@ -8,11 +8,6 @@ def main():
     nums = [5, 8, 3, 7, 1]
     selection_sort(nums)
 
-def swap(nums, i, j):
-    temp = nums[i]
-    nums[i] = nums[j]
-    nums[j] = temp
-
 def selection_sort(nums):
     print nums
     N = len(nums)
@@ -66,5 +61,10 @@ def bubble_sort(nums):
                 swap(nums, j, j+1)
                 print nums
         print
+
+def swap(nums, i, j):
+    temp = nums[i]
+    nums[i] = nums[j]
+    nums[j] = temp
 
 main()
